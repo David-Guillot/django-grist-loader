@@ -1,10 +1,6 @@
 version = 1
 revision = 1
-requires-python = ">=3.9"
-resolution-markers = [
-    "python_full_version >= '3.10'",
-    "python_full_version < '3.10'",
-]
+requires-python = ">=3.10"
 conflicts = [[
     { package = "django-grist-loader", group = "django42" },
     { package = "django-grist-loader", group = "django50" },
@@ -91,19 +87,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/e4/93/946a86ce20790e11312c87c75ba68d5f6ad2208cfb52b2d6a2c32840d922/charset_normalizer-3.4.1-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:fa88b843d6e211393a37219e6a1c1df99d35e8fd90446f1118f4216e307e48cd", size = 145732 },
     { url = "https://files.pythonhosted.org/packages/cd/e5/131d2fb1b0dddafc37be4f3a2fa79aa4c037368be9423061dccadfd90091/charset_normalizer-3.4.1-cp313-cp313-win32.whl", hash = "sha256:eb8178fe3dba6450a3e024e95ac49ed3400e506fd4e9e5c32d30adda88cbd407", size = 95391 },
     { url = "https://files.pythonhosted.org/packages/27/f2/4f9a69cc7712b9b5ad8fdb87039fd89abba997ad5cbe690d1835d40405b0/charset_normalizer-3.4.1-cp313-cp313-win_amd64.whl", hash = "sha256:b1ac5992a838106edb89654e0aebfc24f5848ae2547d22c2c3f66454daa11971", size = 102702 },
-    { url = "https://files.pythonhosted.org/packages/7f/c0/b913f8f02836ed9ab32ea643c6fe4d3325c3d8627cf6e78098671cafff86/charset_normalizer-3.4.1-cp39-cp39-macosx_10_9_universal2.whl", hash = "sha256:b97e690a2118911e39b4042088092771b4ae3fc3aa86518f84b8cf6888dbdb41", size = 197867 },
-    { url = "https://files.pythonhosted.org/packages/0f/6c/2bee440303d705b6fb1e2ec789543edec83d32d258299b16eed28aad48e0/charset_normalizer-3.4.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:78baa6d91634dfb69ec52a463534bc0df05dbd546209b79a3880a34487f4b84f", size = 141385 },
-    { url = "https://files.pythonhosted.org/packages/3d/04/cb42585f07f6f9fd3219ffb6f37d5a39b4fd2db2355b23683060029c35f7/charset_normalizer-3.4.1-cp39-cp39-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:1a2bc9f351a75ef49d664206d51f8e5ede9da246602dc2d2726837620ea034b2", size = 151367 },
-    { url = "https://files.pythonhosted.org/packages/54/54/2412a5b093acb17f0222de007cc129ec0e0df198b5ad2ce5699355269dfe/charset_normalizer-3.4.1-cp39-cp39-manylinux_2_17_s390x.manylinux2014_s390x.whl", hash = "sha256:75832c08354f595c760a804588b9357d34ec00ba1c940c15e31e96d902093770", size = 143928 },
-    { url = "https://files.pythonhosted.org/packages/5a/6d/e2773862b043dcf8a221342954f375392bb2ce6487bcd9f2c1b34e1d6781/charset_normalizer-3.4.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:0af291f4fe114be0280cdd29d533696a77b5b49cfde5467176ecab32353395c4", size = 146203 },
-    { url = "https://files.pythonhosted.org/packages/b9/f8/ca440ef60d8f8916022859885f231abb07ada3c347c03d63f283bec32ef5/charset_normalizer-3.4.1-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:0167ddc8ab6508fe81860a57dd472b2ef4060e8d378f0cc555707126830f2537", size = 148082 },
-    { url = "https://files.pythonhosted.org/packages/04/d2/42fd330901aaa4b805a1097856c2edf5095e260a597f65def493f4b8c833/charset_normalizer-3.4.1-cp39-cp39-musllinux_1_2_aarch64.whl", hash = "sha256:2a75d49014d118e4198bcee5ee0a6f25856b29b12dbf7cd012791f8a6cc5c496", size = 142053 },
-    { url = "https://files.pythonhosted.org/packages/9e/af/3a97a4fa3c53586f1910dadfc916e9c4f35eeada36de4108f5096cb7215f/charset_normalizer-3.4.1-cp39-cp39-musllinux_1_2_i686.whl", hash = "sha256:363e2f92b0f0174b2f8238240a1a30142e3db7b957a5dd5689b0e75fb717cc78", size = 150625 },
-    { url = "https://files.pythonhosted.org/packages/26/ae/23d6041322a3556e4da139663d02fb1b3c59a23ab2e2b56432bd2ad63ded/charset_normalizer-3.4.1-cp39-cp39-musllinux_1_2_ppc64le.whl", hash = "sha256:ab36c8eb7e454e34e60eb55ca5d241a5d18b2c6244f6827a30e451c42410b5f7", size = 153549 },
-    { url = "https://files.pythonhosted.org/packages/94/22/b8f2081c6a77cb20d97e57e0b385b481887aa08019d2459dc2858ed64871/charset_normalizer-3.4.1-cp39-cp39-musllinux_1_2_s390x.whl", hash = "sha256:4c0907b1928a36d5a998d72d64d8eaa7244989f7aaaf947500d3a800c83a3fd6", size = 150945 },
-    { url = "https://files.pythonhosted.org/packages/c7/0b/c5ec5092747f801b8b093cdf5610e732b809d6cb11f4c51e35fc28d1d389/charset_normalizer-3.4.1-cp39-cp39-musllinux_1_2_x86_64.whl", hash = "sha256:04432ad9479fa40ec0f387795ddad4437a2b50417c69fa275e212933519ff294", size = 146595 },
-    { url = "https://files.pythonhosted.org/packages/0c/5a/0b59704c38470df6768aa154cc87b1ac7c9bb687990a1559dc8765e8627e/charset_normalizer-3.4.1-cp39-cp39-win32.whl", hash = "sha256:3bed14e9c89dcb10e8f3a29f9ccac4955aebe93c71ae803af79265c9ca5644c5", size = 95453 },
-    { url = "https://files.pythonhosted.org/packages/85/2d/a9790237cb4d01a6d57afadc8573c8b73c609ade20b80f4cda30802009ee/charset_normalizer-3.4.1-cp39-cp39-win_amd64.whl", hash = "sha256:49402233c892a461407c512a19435d1ce275543138294f7ef013f0b63d5d3765", size = 102811 },
     { url = "https://files.pythonhosted.org/packages/0e/f6/65ecc6878a89bb1c23a086ea335ad4bf21a588990c3f535a227b9eea9108/charset_normalizer-3.4.1-py3-none-any.whl", hash = "sha256:d98b1668f06378c6dbefec3b92299716b931cd4e6061f3c875a71ced1780ab85", size = 49767 },
 ]
 
@@ -172,16 +155,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/e4/e8/1d6f1a6651672c64f45ffad05306dad9c4c189bec694270822508049b2cb/coverage-7.7.1-cp313-cp313t-musllinux_1_2_x86_64.whl", hash = "sha256:7e688010581dbac9cab72800e9076e16f7cccd0d89af5785b70daa11174e94de", size = 254687 },
     { url = "https://files.pythonhosted.org/packages/6b/ea/1b9a14cf3e2bc3fd9de23a336a8082091711c5f480b500782d59e84a8fe5/coverage-7.7.1-cp313-cp313t-win32.whl", hash = "sha256:e52eb31ae3afacdacfe50705a15b75ded67935770c460d88c215a9c0c40d0e9c", size = 214486 },
     { url = "https://files.pythonhosted.org/packages/cc/bb/faa6bcf769cb7b3b660532a30d77c440289b40636c7f80e498b961295d07/coverage-7.7.1-cp313-cp313t-win_amd64.whl", hash = "sha256:a6b6b3bd121ee2ec4bd35039319f3423d0be282b9752a5ae9f18724bc93ebe7c", size = 215647 },
-    { url = "https://files.pythonhosted.org/packages/18/8a/c99478521fb4ea0370c72c8ce2c6a90973eeaccdb9e87b61b30ee090ace2/coverage-7.7.1-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:34a3bf6b92e6621fc4dcdaab353e173ccb0ca9e4bfbcf7e49a0134c86c9cd303", size = 210947 },
-    { url = "https://files.pythonhosted.org/packages/e0/8c/fefae75825b99ac4b845ec48b7d585269838a10907bbcb1015b086b64b9f/coverage-7.7.1-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:d6874929d624d3a670f676efafbbc747f519a6121b581dd41d012109e70a5ebd", size = 211369 },
-    { url = "https://files.pythonhosted.org/packages/4f/bf/1a48c4b3cf533910bb52e6bf18666a11ec19dfba01330b89e51df0269259/coverage-7.7.1-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:7ba5ff236c87a7b7aa1441a216caf44baee14cbfbd2256d306f926d16b026578", size = 240136 },
-    { url = "https://files.pythonhosted.org/packages/9d/63/22684c48520501edd4cb62ee27c016ea74935bf6a435d23c9cd75bd51c15/coverage-7.7.1-cp39-cp39-manylinux_2_5_i686.manylinux1_i686.manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:452735fafe8ff5918236d5fe1feac322b359e57692269c75151f9b4ee4b7e1bc", size = 238062 },
-    { url = "https://files.pythonhosted.org/packages/15/2b/a1f704e986671bbeffd1edb1e9ec6a98c4bfe40db3e6789147f008136256/coverage-7.7.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:f5f99a93cecf799738e211f9746dc83749b5693538fbfac279a61682ba309387", size = 239162 },
-    { url = "https://files.pythonhosted.org/packages/db/5a/5d98375fe1a42a61709c96b51b89959a537099c912d63cfe6b362b415fbe/coverage-7.7.1-cp39-cp39-musllinux_1_2_aarch64.whl", hash = "sha256:11dd6f52c2a7ce8bf0a5f3b6e4a8eb60e157ffedc3c4b4314a41c1dfbd26ce58", size = 238938 },
-    { url = "https://files.pythonhosted.org/packages/a1/1b/ac5cac616de92c7a8dae17c585e86dcda95f2c39bc438c91ed1c9a5893ba/coverage-7.7.1-cp39-cp39-musllinux_1_2_i686.whl", hash = "sha256:b52edb940d087e2a96e73c1523284a2e94a4e66fa2ea1e2e64dddc67173bad94", size = 237164 },
-    { url = "https://files.pythonhosted.org/packages/4f/19/ce7cb8e9269b74da0b4a337a78b1ff8896d8584b692e6b67c7bf53b15b1c/coverage-7.7.1-cp39-cp39-musllinux_1_2_x86_64.whl", hash = "sha256:d2e73e2ac468536197e6b3ab79bc4a5c9da0f078cd78cfcc7fe27cf5d1195ef0", size = 238144 },
-    { url = "https://files.pythonhosted.org/packages/60/3a/bcd8e5c0bb76e1c9a275e817498e80d1f7cdc7020c941d616d9d22487776/coverage-7.7.1-cp39-cp39-win32.whl", hash = "sha256:18f544356bceef17cc55fcf859e5664f06946c1b68efcea6acdc50f8f6a6e776", size = 213542 },
-    { url = "https://files.pythonhosted.org/packages/78/b4/d9f39df48a336276582890c3833485ba43329d40aa4e269292c52408b1fb/coverage-7.7.1-cp39-cp39-win_amd64.whl", hash = "sha256:d66ff48ab3bb6f762a153e29c0fc1eb5a62a260217bc64470d7ba602f5886d20", size = 214427 },
     { url = "https://files.pythonhosted.org/packages/f9/4e/a501ec475ed455c1ee1570063527afe2c06ab1039f8ff18eefecfbdac8fd/coverage-7.7.1-pp39.pp310.pp311-none-any.whl", hash = "sha256:5b7b02e50d54be6114cc4f6a3222fec83164f7c42772ba03b520138859b5fde1", size = 203014 },
     { url = "https://files.pythonhosted.org/packages/52/26/9f53293ff4cc1d47d98367ce045ca2e62746d6be74a5c6851a474eabf59b/coverage-7.7.1-py3-none-any.whl", hash = "sha256:822fa99dd1ac686061e1219b67868e25d9757989cf2259f735a4802497d6da31", size = 203006 },
 ]
@@ -195,14 +168,10 @@ toml = [
 name = "django"
 version = "4.2.20"
 source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.10'",
-    "python_full_version < '3.10'",
-]
 dependencies = [
-    { name = "asgiref" },
-    { name = "sqlparse" },
-    { name = "tzdata", marker = "sys_platform == 'win32'" },
+    { name = "asgiref", marker = "extra == 'group-19-django-grist-loader-django42' or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "sqlparse", marker = "extra == 'group-19-django-grist-loader-django42' or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "tzdata", marker = "(sys_platform == 'win32' and extra == 'group-19-django-grist-loader-django42') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/0a/dd/33d2a11713f6b78493273a32d99bb449f2d93663ed4ec15a8b890d44ba04/Django-4.2.20.tar.gz", hash = "sha256:92bac5b4432a64532abb73b2ac27203f485e40225d2640a7fbef2b62b876e789", size = 10432686 }
 wheels = [
@@ -213,13 +182,10 @@ wheels = [
 name = "django"
 version = "5.0.13"
 source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.10'",
-]
 dependencies = [
-    { name = "asgiref", marker = "(python_full_version >= '3.10' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
-    { name = "sqlparse", marker = "(python_full_version >= '3.10' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
-    { name = "tzdata", marker = "(python_full_version >= '3.10' and sys_platform == 'win32' and extra == 'group-19-django-grist-loader-django50') or (python_full_version < '3.10' and extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (python_full_version < '3.10' and extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (python_full_version < '3.10' and extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52') or (sys_platform != 'win32' and extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (sys_platform != 'win32' and extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (sys_platform != 'win32' and extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra != 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "asgiref", marker = "extra == 'group-19-django-grist-loader-django50' or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "sqlparse", marker = "extra == 'group-19-django-grist-loader-django50' or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "tzdata", marker = "(sys_platform == 'win32' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/62/6d/2e1936a3522bdece6ecec752fd9dca41fc937c807f4651b87222e3169326/Django-5.0.13.tar.gz", hash = "sha256:f9d4b7b87a9dae248d5f20cec940cf7290e07d508d6d8432e3c2cabf09b3b0ff", size = 10643726 }
 wheels = [
@@ -230,13 +196,10 @@ wheels = [
 name = "django"
 version = "5.1.7"
 source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.10'",
-]
 dependencies = [
-    { name = "asgiref", marker = "(python_full_version >= '3.10' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52')" },
-    { name = "sqlparse", marker = "(python_full_version >= '3.10' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52')" },
-    { name = "tzdata", marker = "(python_full_version >= '3.10' and sys_platform == 'win32' and extra == 'group-19-django-grist-loader-django51') or (python_full_version < '3.10' and extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52') or (sys_platform != 'win32' and extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "asgiref", marker = "extra == 'group-19-django-grist-loader-django51' or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra != 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "sqlparse", marker = "extra == 'group-19-django-grist-loader-django51' or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra != 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "tzdata", marker = "(sys_platform == 'win32' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/5f/57/11186e493ddc5a5e92cc7924a6363f7d4c2b645f7d7cb04a26a63f9bfb8b/Django-5.1.7.tar.gz", hash = "sha256:30de4ee43a98e5d3da36a9002f287ff400b43ca51791920bfb35f6917bfe041c", size = 10716510 }
 wheels = [
@@ -247,13 +210,10 @@ wheels = [
 name = "django"
 version = "5.2rc1"
 source = { registry = "https://pypi.org/simple" }
-resolution-markers = [
-    "python_full_version >= '3.10'",
-]
 dependencies = [
-    { name = "asgiref", marker = "python_full_version >= '3.10'" },
-    { name = "sqlparse", marker = "python_full_version >= '3.10'" },
-    { name = "tzdata", marker = "python_full_version >= '3.10' and sys_platform == 'win32'" },
+    { name = "asgiref" },
+    { name = "sqlparse" },
+    { name = "tzdata", marker = "sys_platform == 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/11/31/661e007060abcba476344e7cfe9b3bd34835ae358abfea0e507886a11493/Django-5.2rc1.tar.gz", hash = "sha256:01ab1a67decfae1acb2c3fad9937702bb801279177845bd3dcccc09dcc001e72", size = 10817143 }
 wheels = [
@@ -262,13 +222,13 @@ wheels = [
 
 [[package]]
 name = "django-grist-loader"
-version = "0.1.0"
+version = "0.1.1"
 source = { editable = "." }
 dependencies = [
-    { name = "django", version = "4.2.20", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version < '3.10' or extra == 'group-19-django-grist-loader-django42' or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
-    { name = "django", version = "5.0.13", source = { registry = "https://pypi.org/simple" }, marker = "(python_full_version >= '3.10' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
-    { name = "django", version = "5.1.7", source = { registry = "https://pypi.org/simple" }, marker = "(python_full_version >= '3.10' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52')" },
-    { name = "django", version = "5.2rc1", source = { registry = "https://pypi.org/simple" }, marker = "(python_full_version >= '3.10' and extra != 'group-19-django-grist-loader-django42' and extra != 'group-19-django-grist-loader-django50' and extra != 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "django", version = "4.2.20", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-19-django-grist-loader-django42' or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "django", version = "5.0.13", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-19-django-grist-loader-django50' or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "django", version = "5.1.7", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-19-django-grist-loader-django51' or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django52') or (extra == 'group-19-django-grist-loader-django42' and extra != 'group-19-django-grist-loader-django51' and extra == 'group-19-django-grist-loader-django52')" },
+    { name = "django", version = "5.2rc1", source = { registry = "https://pypi.org/simple" }, marker = "extra == 'group-19-django-grist-loader-django52' or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django50') or (extra == 'group-19-django-grist-loader-django42' and extra == 'group-19-django-grist-loader-django51') or (extra == 'group-19-django-grist-loader-django50' and extra == 'group-19-django-grist-loader-django51') or (extra != 'group-19-django-grist-loader-django42' and extra != 'group-19-django-grist-loader-django50' and extra != 'group-19-django-grist-loader-django51')" },
     { name = "psycopg", extra = ["binary"] },
     { name = "pygrister" },
 ]
@@ -281,13 +241,13 @@ django42 = [
     { name = "django", version = "4.2.20", source = { registry = "https://pypi.org/simple" } },
 ]
 django50 = [
-    { name = "django", version = "5.0.13", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "django", version = "5.0.13", source = { registry = "https://pypi.org/simple" } },
 ]
 django51 = [
-    { name = "django", version = "5.1.7", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "django", version = "5.1.7", source = { registry = "https://pypi.org/simple" } },
 ]
 django52 = [
-    { name = "django", version = "5.2rc1", source = { registry = "https://pypi.org/simple" }, marker = "python_full_version >= '3.10'" },
+    { name = "django", version = "5.2rc1", source = { registry = "https://pypi.org/simple" } },
 ]
 test = [
     { name = "coverage", extra = ["toml"] },
@@ -305,7 +265,7 @@ requires-dist = [
 
 [package.metadata.requires-dev]
 devel = [{ name = "ruff" }]
-django42 = [{ name = "django", marker = "python_full_version >= '3.9'", specifier = ">=4.2,<5" }]
+django42 = [{ name = "django", marker = "python_full_version >= '3.10'", specifier = ">=4.2,<5" }]
 django50 = [{ name = "django", marker = "python_full_version >= '3.10'", specifier = ">=5.0,<5.1" }]
 django51 = [{ name = "django", marker = "python_full_version >= '3.10'", specifier = ">=5.1,<5.2" }]
 django52 = [{ name = "django", marker = "python_full_version >= '3.10'", specifier = ">=5.2a1,<6" }]
@@ -461,17 +421,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/d7/d7/0d2cb4b42f231e2efe8ea1799ce917973d47486212a2c4d33cd331e7ac28/psycopg_binary-3.2.6-cp313-cp313-musllinux_1_2_ppc64le.whl", hash = "sha256:36f598300b55b3c983ae8df06473ad27333d2fd9f3e2cfdb913b3a5aaa3a8bcf", size = 3402335 },
     { url = "https://files.pythonhosted.org/packages/66/92/7050c372f78e53eba14695cec6c3a91b2d9ca56feaf0bfe95fe90facf730/psycopg_binary-3.2.6-cp313-cp313-musllinux_1_2_x86_64.whl", hash = "sha256:0f4699fa5fe1fffb0d6b2d14b31fd8c29b7ea7375f89d5989f002aaf21728b21", size = 3440442 },
     { url = "https://files.pythonhosted.org/packages/5f/4c/bebcaf754189283b2f3d457822a3d9b233d08ff50973d8f1e8d51f4d35ed/psycopg_binary-3.2.6-cp313-cp313-win_amd64.whl", hash = "sha256:afe697b8b0071f497c5d4c0f41df9e038391534f5614f7fb3a8c1ca32d66e860", size = 2783465 },
-    { url = "https://files.pythonhosted.org/packages/be/ac/5023320c46e0d233faff6cd2d902a60d6c09034f136e7cc0876463a97d50/psycopg_binary-3.2.6-cp39-cp39-macosx_10_9_x86_64.whl", hash = "sha256:260c43c329e668606388cee78ec0dab083a25c2c6e6f9cf74a130fd5a27b0f87", size = 3870121 },
-    { url = "https://files.pythonhosted.org/packages/8d/2d/63cdd41112c954582d6bb8905970abe5e5a69b53d6dd2a38fc7ec624a6b4/psycopg_binary-3.2.6-cp39-cp39-macosx_11_0_arm64.whl", hash = "sha256:9870e51fad4684dbdec057fa757d65e61cb2acb16236836e9360044c2a1ec880", size = 3939150 },
-    { url = "https://files.pythonhosted.org/packages/a8/c6/0a0fe3b5506d30d597c82b16b8c1e023393a10701109e917c4cb529ccc71/psycopg_binary-3.2.6-cp39-cp39-manylinux_2_17_aarch64.manylinux2014_aarch64.whl", hash = "sha256:030e9c3082a931e972b029b3cef085784a3bf7f8e18367ae50d5b809aa6e1d87", size = 4525092 },
-    { url = "https://files.pythonhosted.org/packages/0d/66/66c3c05a0535c022b1b8af501aec05161084e6a4ab44edebd99ff82de976/psycopg_binary-3.2.6-cp39-cp39-manylinux_2_17_i686.manylinux2014_i686.whl", hash = "sha256:b60c9ed291fbd5e777c2c630dcfd10b7a87d68512b0757d5e7406d9c4895a82a", size = 4330350 },
-    { url = "https://files.pythonhosted.org/packages/90/f3/15ce9800b54c50ff01af1c39d0a727083bb3640067a54b58631ca6666b24/psycopg_binary-3.2.6-cp39-cp39-manylinux_2_17_ppc64le.manylinux2014_ppc64le.whl", hash = "sha256:2e0f4a17a9c376c195e403b4826c18f325bd28f425231d36d1036258bf893e23", size = 4577917 },
-    { url = "https://files.pythonhosted.org/packages/a0/aa/ffe622452a43376193d3d1e63b479e0f90ce9732c91366c05a16ce49e513/psycopg_binary-3.2.6-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ac46da609624b16d961f604b3cbc3233ef43211ef1456a188f8c427109c9c3e1", size = 4286328 },
-    { url = "https://files.pythonhosted.org/packages/bf/bf/53da912ba8ace3136318718112c5db85bf0ed4f079f92849536a78384875/psycopg_binary-3.2.6-cp39-cp39-musllinux_1_2_aarch64.whl", hash = "sha256:e77949b8e7014b85cee0bf6e9e041bcae7719b2693ebf59236368fb0b2a08814", size = 3874534 },
-    { url = "https://files.pythonhosted.org/packages/1a/b5/e659e96ffc6846d3f90c4af785c84898e625f974c7f67255688addda6167/psycopg_binary-3.2.6-cp39-cp39-musllinux_1_2_i686.whl", hash = "sha256:532322d9ef6e7d178a4f344970b017110633bcc3dc1c3403efcef55aad612517", size = 3339634 },
-    { url = "https://files.pythonhosted.org/packages/9b/d6/92858290a8d710a27caf1b92183f4fa2ef3b99c9b6959fc73fd9639b8412/psycopg_binary-3.2.6-cp39-cp39-musllinux_1_2_ppc64le.whl", hash = "sha256:880c5fd76dcb50bdcc8f87359e5a6c7eb416697cc9aa02854c91223bd999c045", size = 3437930 },
-    { url = "https://files.pythonhosted.org/packages/f7/a5/60b5a6519f58b2deca261d2e4566bce4beeeb30f6e7c3f72e4d8f204dcf6/psycopg_binary-3.2.6-cp39-cp39-musllinux_1_2_x86_64.whl", hash = "sha256:3c0cddc7458b8416d77cd8829d0192466502f31d1fb853d58613cf13ac64f41c", size = 3464810 },
-    { url = "https://files.pythonhosted.org/packages/27/b6/e48cafe90e46b82b1393276ce6d92ddb7650c39aba8aa0256affbaa94c36/psycopg_binary-3.2.6-cp39-cp39-win_amd64.whl", hash = "sha256:ea158665676f42b19585dfe948071d3c5f28276f84a97522fb2e82c1d9194563", size = 2793902 },
 ]
 
 [[package]]
