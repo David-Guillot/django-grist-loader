@@ -1,0 +1,9 @@
+.venv
+*.egg-info/
+*.pyc
+.python-version
+/.coverage
+/.coverage.*
+/.tox
+/build/
+/dist/

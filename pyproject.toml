@@ -1,0 +1,85 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = [
+    "setuptools",
+]
+
+[project]
+name = "django-grist-loader"
+version = "0.1.0"
+description = "A reusable Django app to load data from Grist to Django models"
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = [
+    "Django",
+    "Grist",
+]
+authors = [
+    { name = "David Guillot", email = "david.guillot@beta.gouv.fr" },
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Framework :: Django :: 4.2",
+    "Framework :: Django :: 5.0",
+    "Framework :: Django :: 5.1",
+    "Framework :: Django :: 5.2",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: Implementation :: CPython",
+]
+urls.Source = "https://github.com/betagouv/django-grist-loader"
+
+dependencies = [
+    "django >=4.2,<6",
+]
+
+[dependency-groups]
+devel = [
+    "ruff",
+]
+test = [
+    "coverage[toml]",
+    "pytest",
+    "pytest-django",
+    "pytest-factoryboy",
+]
+django42 = ["django>=4.2,<5; python_version>='3.9'"]
+django50 = ["django>=5.0,<5.1; python_version>='3.10'"]
+django51 = ["django>=5.1,<5.2; python_version>='3.10'"]
+django52 = ["django>=5.2a1,<6; python_version>='3.10'"]
+
+[tool.coverage.paths]
+source = [
+    "src",
+    ".tox/**/site-packages",
+]
+
+[tool.coverage.report]
+show_missing = true
+
+[tool.uv]
+conflicts = [
+    [
+        { group = "django42" },
+        { group = "django50" },
+        { group = "django51" },
+        { group = "django52" },
+    ],
+]
+
+[tool.pytest.ini_options]
+addopts = """\
+    --strict-config
+    --strict-markers
+    --ds=tests.settings
+    """
+django_find_project = false
+xfail_strict = true
