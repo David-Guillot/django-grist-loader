@@ -39,6 +39,8 @@ urls.Source = "https://github.com/betagouv/django-grist-loader"
 
 dependencies = [
     "django >=4.2,<6",
+    "psycopg[binary] >=3.2,<4",
+    "pygrister ~= 0.6",
 ]
 
 [dependency-groups]
@@ -55,6 +57,14 @@ django42 = ["django>=4.2,<5; python_version>='3.9'"]
 django50 = ["django>=5.0,<5.1; python_version>='3.10'"]
 django51 = ["django>=5.1,<5.2; python_version>='3.10'"]
 django52 = ["django>=5.2a1,<6; python_version>='3.10'"]
+
+[tool.coverage.run]
+branch = true
+parallel = true
+source = [
+    "grist_loader",
+    "tests",
+]
 
 [tool.coverage.paths]
 source = [
