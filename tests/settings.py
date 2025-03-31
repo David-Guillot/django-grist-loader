@@ -15,3 +15,5 @@ MIDDLEWARE = ["corsheaders.middleware.CorsMiddleware"]
 SECURE_PROXY_SSL_HEADER = ("HTTP_FAKE_SECURE", "true")
 
 USE_TZ = True
+
+GRIST_PYGRISTER_CONFIG = {}

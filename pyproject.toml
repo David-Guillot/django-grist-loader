@@ -39,6 +39,8 @@ urls.Source = "https://github.com/betagouv/django-grist-loader"
 
 dependencies = [
     "django >=4.2,<6",
+    "psycopg[binary] >=3.2,<4",
+    "pygrister ~= 0.6",
 ]
 
 [dependency-groups]
