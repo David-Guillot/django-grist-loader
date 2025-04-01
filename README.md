@@ -70,6 +70,9 @@ The usual way:
          "MyInt": MyModel.my_int_field,
          "MyDate": MyModel.my_date_field,
        }
+       filter = {
+           "MyChar": ["some value"],
+       }
     ```
 3. Load your data
    ```shell

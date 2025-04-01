@@ -1,5 +1,6 @@
 import datetime
 import logging
+from typing import Any
 
 from django.core.exceptions import ImproperlyConfigured
 from django.conf import settings
@@ -25,6 +26,7 @@ class GristLoader:
         str,
         DeferredAttribute | ForwardManyToOneDescriptor | ManyToManyDescriptor,
     ] = dict()
+    filter: dict[str, list[Any]] = dict()
 
     def __init__(self):
         if not issubclass(self.model, GristModel):
@@ -118,7 +120,7 @@ class GristLoader:
         logger.debug(
             f"Loading table {self.table} into model {self.model._meta.model_name}"
         )
-        status, rows = self.gristapi.list_records(self.table)
+        status, rows = self.gristapi.list_records(self.table, filter=self.filter)
         for row in rows:
             # check if all required cols do have a value
             # ignore the row if not
