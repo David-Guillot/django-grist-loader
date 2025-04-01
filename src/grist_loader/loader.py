@@ -16,8 +16,6 @@ from .models import GristModel
 
 logger = logging.getLogger(__name__)
 
-gristapi = GristApi(config=settings.GRIST_PYGRISTER_CONFIG)
-
 
 class GristLoader:
     model = None
@@ -34,7 +32,10 @@ class GristLoader:
                 "GristLoader model must be a subclass of GristModel"
             )
         if not isinstance(self.table, str):
-            raise ImproperlyConfigured("GristLoader table must be a str: it's the name of a Grist table")
+            raise ImproperlyConfigured(
+                "GristLoader table must be a str: it's the name of a Grist table"
+            )
+        self.gristapi = GristApi(config=settings.GRIST_PYGRISTER_CONFIG)
         self.current_obj = None
         self.current_row = None
 
@@ -114,8 +115,10 @@ class GristLoader:
         return False
 
     def load(self):
-        logger.debug(f"Loading table {self.table} into model {self.model._meta.model_name}")
-        status, rows = gristapi.list_records(self.table)
+        logger.debug(
+            f"Loading table {self.table} into model {self.model._meta.model_name}"
+        )
+        status, rows = self.gristapi.list_records(self.table)
         for row in rows:
             # check if all required cols do have a value
             # ignore the row if not

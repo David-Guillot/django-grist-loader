@@ -1,6 +1,6 @@
 import pytest
 
-from grist_loader.loader import gristapi
+from grist_loader.loader import GristApi
 
 from .models import ModelA, ModelB
 from .grist import ModelALoader, ModelBLoader
@@ -21,10 +21,11 @@ def test_load_model_a(monkeypatch, model_a):
             {"id": 2, "col_a": "Other custom field a", "col_b": 47},
         ]
 
-    monkeypatch.setattr(gristapi, "list_records", mock_list_records)
+    loader = ModelALoader()
+    monkeypatch.setattr(loader.gristapi, "list_records", mock_list_records)
 
     # WHEN loading ModelA
-    ModelALoader().load()
+    loader.load()
 
     # THEN we have 2 ModelA
     # the existing one had its field_a updated
@@ -46,10 +47,11 @@ def test_load_model_b(monkeypatch, model_a, model_a_other):
             {"id": 1, "col_reference_to_a": model_a.pk, "col_references_to_a": ["L2", model_a.pk, model_a_other.pk]},
         ]
 
-    monkeypatch.setattr(gristapi, "list_records", mock_list_records)
+    loader = ModelBLoader()
+    monkeypatch.setattr(loader.gristapi, "list_records", mock_list_records)
 
     # WHEN loading ModelB
-    ModelBLoader().load()
+    loader.load()
 
     # THEN we have 1 ModelB
     # no new ModelA has vbeen created
