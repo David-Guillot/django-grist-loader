@@ -6,7 +6,7 @@ requires = [
 
 [project]
 name = "django-grist-loader"
-version = "0.2.0"
+version = "0.3.0"
 description = "A reusable Django app to load data from Grist to Django models"
 readme = "README.md"
 requires-python = ">=3.10"
