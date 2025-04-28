@@ -3,7 +3,13 @@ from grist_loader.loader import GristLoader
 from .models import ModelA, ModelB
 
 
+class ImproperlyConfiguredLoader(GristLoader):
+    table = "TableA"
+    model = ModelA
+
+
 class ModelALoader(GristLoader):
+    pygrister_config = {"GRIST_API_KEY": "mykey", }
     table = "TableA"
     model = ModelA
     required_cols = ("col_a",)
@@ -14,6 +20,7 @@ class ModelALoader(GristLoader):
 
 
 class ModelBLoader(GristLoader):
+    pygrister_config = {"GRIST_API_KEY": "mykey", }
     table = "TableB"
     model = ModelB
     required_cols = ("col_reference_to_a",)

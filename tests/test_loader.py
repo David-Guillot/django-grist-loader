@@ -1,9 +1,14 @@
 import pytest
-
-from grist_loader.loader import GristApi
+from django.core.exceptions import ImproperlyConfigured
 
 from .models import ModelA, ModelB
-from .grist import ModelALoader, ModelBLoader
+from .grist import ImproperlyConfiguredLoader, ModelALoader, ModelBLoader
+
+
+@pytest.mark.django_db
+def test_loader_pygrister_config():
+    with pytest.raises(ImproperlyConfigured):
+        ImproperlyConfiguredLoader()
 
 
 @pytest.mark.django_db
