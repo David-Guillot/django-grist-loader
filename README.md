@@ -55,6 +55,7 @@ The usual way:
 2. Within a `grist.py` module, define a loader class that subclasses `GristLoader`:
 
     ```python
+   from django.conf import settings
    from grist_loader.loader import GristLoader, register_grist_loader
 
    from .models import MyModel
@@ -63,6 +64,7 @@ The usual way:
    @register_grist_loader
    class MyLoader(GristLoader):
        model = MyModel
+       pygrister_config = settings.GRIST_PYGRISTER_CONFIG
        table = "MyGristTableName"
        required_cols = ("MyChar",)
        fields = {

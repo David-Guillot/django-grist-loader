@@ -20,6 +20,7 @@ logger = logging.getLogger(__name__)
 
 class GristLoader:
     model = None
+    pygrister_config = None
     table = None
     required_cols = tuple()
     fields: dict[
@@ -37,7 +38,11 @@ class GristLoader:
             raise ImproperlyConfigured(
                 "GristLoader table must be a str: it's the name of a Grist table"
             )
-        self.gristapi = GristApi(config=settings.GRIST_PYGRISTER_CONFIG)
+        if not isinstance(self.pygrister_config, dict):
+            raise ImproperlyConfigured(
+                "GristLoader pygrister_config must be a dict as defined here: https://pygrister.readthedocs.io/en/latest/conf.html#configuration-keys"
+            )
+        self.gristapi = GristApi(config=self.pygrister_config)
         self.current_obj = None
         self.current_row = None
 
